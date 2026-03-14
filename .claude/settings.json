@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(just add*)",
+      "Bash(just fetch*)",
+      "Bash(just update*)",
+      "Bash(just status*)",
+      "Bash(just list*)"
+    ]
+  }
+}
