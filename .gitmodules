@@ -10,3 +10,6 @@
 [submodule "repos/voicemode"]
 	path = repos/voicemode
 	url = https://github.com/mbailey/voicemode
+[submodule "repos/gstack"]
+	path = repos/gstack
+	url = https://github.com/garrytan/gstack
