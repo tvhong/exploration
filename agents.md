@@ -35,7 +35,17 @@ just update <name>                                 # update one to latest + comm
 just update-all                                    # update all to latest + commit
 just status                                        # show pinned commits
 just list                                          # list all submodule paths
+just clean <name>                                  # deinit a submodule (frees local disk, keeps registration)
 ```
+
+### Claude permissions
+
+Claude permissions are managed in two files:
+
+- `.claude/settings.json` — checked into the repo; add allowed commands here (e.g. `just` commands)
+- `.claude/settings.local.json` — local only, not committed; use for personal or machine-specific overrides
+
+When updating permissions (e.g. allowlisting a new `just` command), edit `settings.json` so the change is shared with the repo.
 
 ## What NOT to Do
 
