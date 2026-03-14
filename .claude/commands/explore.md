@@ -12,6 +12,8 @@ The user will name a repo (e.g. "gstack", "rig", "llm"). The repo lives at `repo
 
 If the user didn't specify a name, ask which repo in `repos/` they want to explore.
 
+Before starting research, check whether `repos/<name>/` exists and has content. If it's empty or missing, run `just add <url>` (if the user provided a URL) or `just fetch <name>` (if the submodule is already registered) to populate it first.
+
 ## Research process
 
 Read up to ~25 files. Prioritize in this order:
