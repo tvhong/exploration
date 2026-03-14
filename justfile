@@ -1,9 +1,11 @@
 # Add a new submodule under repos/
 # Usage: just add https://github.com/owner/repo [name]
-add repo name=`basename $repo .git`:
-    git submodule add {{repo}} repos/{{name}}
-    git add .gitmodules repos/{{name}}
-    git commit -m "Add {{name}} as submodule"
+add repo name="":
+    #!/usr/bin/env bash
+    name="${name:-$(basename "{{repo}}" .git)}"
+    git submodule add "{{repo}}" "repos/$name"
+    git add .gitmodules "repos/$name"
+    git commit -m "Add $name as submodule"
 
 # Fetch (init + download) a single submodule without fetching the rest
 fetch name:
