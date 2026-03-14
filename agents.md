@@ -16,32 +16,25 @@ This is an exploration repository. The owner reads public codebases and writes a
 
 ## Working in This Repo
 
+Use the `just` commands defined in `justfile` for all submodule operations.
+
 ### Writing reports
 
 - Reports go in `reports/`
 - Name them after the subject repo, e.g. `reports/rig_report.md`
 - Write in markdown
 
-### Adding a submodule
+### Common commands
 
 ```bash
-git submodule add https://github.com/<owner>/<repo> repos/<repo>
-git add .gitmodules repos/<repo>
-git commit -m "Add <repo> as submodule"
-```
-
-### Updating a submodule to latest
-
-```bash
-git submodule update --remote repos/<repo>
-git add repos/<repo>
-git commit -m "Update <repo> to latest"
-```
-
-### Fetching a single submodule (without fetching all)
-
-```bash
-git submodule update --init repos/<repo>
+just add https://github.com/<owner>/<repo>        # add new submodule (name inferred)
+just add https://github.com/<owner>/<repo> <name> # add with custom name
+just fetch <name>                                  # download a single submodule
+just fetch-all                                     # download all submodules
+just update <name>                                 # update one to latest + commit
+just update-all                                    # update all to latest + commit
+just status                                        # show pinned commits
+just list                                          # list all submodule paths
 ```
 
 ## What NOT to Do
