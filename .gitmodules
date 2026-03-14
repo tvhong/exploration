@@ -1,0 +1,12 @@
+[submodule "repos/FastCode"]
+	path = repos/FastCode
+	url = https://github.com/HKUDS/FastCode.git
+[submodule "repos/morris"]
+	path = repos/morris
+	url = https://github.com/marcbrooker/morris.git
+[submodule "repos/rig"]
+	path = repos/rig
+	url = https://github.com/0xPlaygrounds/rig
+[submodule "repos/voicemode"]
+	path = repos/voicemode
+	url = https://github.com/mbailey/voicemode
