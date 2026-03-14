@@ -13,3 +13,6 @@
 [submodule "repos/gstack"]
 	path = repos/gstack
 	url = https://github.com/garrytan/gstack
+[submodule "repos/context-hub"]
+	path = repos/context-hub
+	url = https://github.com/andrewyng/context-hub
