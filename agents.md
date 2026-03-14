@@ -36,6 +36,7 @@ just update-all                                    # update all to latest + comm
 just status                                        # show pinned commits
 just list                                          # list all submodule paths
 just clean <name>                                  # deinit a submodule (frees local disk, keeps registration)
+just clean-all                                     # deinit all submodules
 ```
 
 > **Note:** After `just clean`, the repo folder will appear empty but should **not** be deleted. Git tracks submodules as gitlink objects (mode `160000`) — the empty directory is the placeholder for that pointer. Removing it stages a deletion of the submodule from the index.

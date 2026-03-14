@@ -36,3 +36,7 @@ list:
 # Deinitialize (clear local files) for a single submodule without removing its registration
 clean name:
     git submodule deinit repos/{{name}}
+
+# Deinitialize all submodules
+clean-all:
+    git submodule deinit --all
