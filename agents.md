@@ -6,13 +6,13 @@ This is an exploration repository. The owner reads public codebases and writes a
 
 ## Repo Layout
 
-| Path | Description |
-|------|-------------|
-| `reports/` | Markdown analysis files written by the owner |
-| `repos/` | External repos as git submodules (read-only, not modified) |
-| `README.md` | Human-facing overview |
-| `agents.md` | This file |
-| `CLAUDE.md` | Symlink to this file |
+| Path        | Description                                                |
+| ----------- | ---------------------------------------------------------- |
+| `reports/`  | Markdown analysis files written by the owner               |
+| `repos/`    | External repos as git submodules (read-only, not modified) |
+| `README.md` | Human-facing overview                                      |
+| `agents.md` | This file                                                  |
+| `CLAUDE.md` | Symlink to this file                                       |
 
 ## Working in This Repo
 
@@ -37,6 +37,8 @@ just status                                        # show pinned commits
 just list                                          # list all submodule paths
 just clean <name>                                  # deinit a submodule (frees local disk, keeps registration)
 ```
+
+> **Note:** After `just clean`, the repo folder will appear empty but should **not** be deleted. Git tracks submodules as gitlink objects (mode `160000`) — the empty directory is the placeholder for that pointer. Removing it stages a deletion of the submodule from the index.
 
 ### Claude permissions
 
