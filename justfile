@@ -32,3 +32,7 @@ status:
 # List all registered submodule paths
 list:
     git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
+
+# Deinitialize (clear local files) for a single submodule without removing its registration
+clean name:
+    git submodule deinit repos/{{name}}

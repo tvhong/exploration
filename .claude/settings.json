@@ -5,7 +5,8 @@
       "Bash(just fetch*)",
       "Bash(just update*)",
       "Bash(just status*)",
-      "Bash(just list*)"
+      "Bash(just list*)",
+      "Bash(just clean*)"
     ]
   }
 }
