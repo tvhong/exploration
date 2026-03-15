@@ -19,3 +19,6 @@
 [submodule "repos/MiroFish"]
 	path = repos/MiroFish
 	url = git@github.com:666ghj/MiroFish.git
+[submodule "repos/BettaFish"]
+	path = repos/BettaFish
+	url = https://github.com/666ghj/BettaFish
