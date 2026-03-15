@@ -16,3 +16,6 @@
 [submodule "repos/context-hub"]
 	path = repos/context-hub
 	url = https://github.com/andrewyng/context-hub
+[submodule "repos/MiroFish"]
+	path = repos/MiroFish
+	url = git@github.com:666ghj/MiroFish.git
