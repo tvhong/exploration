@@ -22,3 +22,6 @@
 [submodule "repos/BettaFish"]
 	path = repos/BettaFish
 	url = https://github.com/666ghj/BettaFish
+[submodule "repos/google-flights-mcp"]
+	path = repos/google-flights-mcp
+	url = https://github.com/salamentic/google-flights-mcp
