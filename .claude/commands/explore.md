@@ -24,12 +24,15 @@ Read up to ~25 files. Prioritize in this order:
 4. Any `ARCHITECTURE.md`, `DESIGN.md`, `docs/` folder, or inline diagrams
 5. Main entry point file(s) — `main.py`, `src/index.ts`, `cmd/`, etc.
 6. A few representative feature files that illustrate how the system actually works
+7. Git history and version info — check `git log --oneline -20` in the repo directory, look at version numbers in manifests, and note creation date / recent activity to inform the maturity assessment
 
 Use Glob and Grep liberally to orient yourself before reading files. Don't read test files, lock files, or generated output unless something specific is unclear.
 
 ## Report structure
 
 Write the report to `reports/<name>_<YYYY-MM-DD>.md` where the date is today's date.
+
+The report has two parts: a **5C overview** for quick orientation, followed by **detailed sections** for readers who want to go deeper. Think of the 5Cs like skimming a paper — you get the essential picture fast — and the detailed sections like actually reading it.
 
 Use this exact structure:
 
@@ -38,13 +41,27 @@ Use this exact structure:
 
 > <One-sentence summary of what it does>
 
-## What is it?
+## 5C Overview
 
-What problem does this solve, and for whom? What was the motivation for building it?
+### Category
 
-## Ecosystem fit & innovations
+What type of artifact is this — library, CLI tool, web app, framework, plugin, platform, etc.? What language/ecosystem? Who is the target user?
 
-Where does this sit in the broader world of tools, frameworks, or workflows? What are the interesting or novel design choices? What makes this different from alternatives?
+### Context
+
+What problem space does this live in? What is the current state of this domain — what tools, approaches, or standards already exist? This sets the stage for understanding why the repo matters.
+
+### Contribution
+
+What does this repo specifically add to the field? What gap does it fill, what does it do differently or better than alternatives? This is the "so what" — the reason someone would choose this over existing options.
+
+### Correctness
+
+How mature and reliable does this appear? Look at: version number (pre-1.0 vs stable), test coverage, CI setup, error handling patterns, age of the project, commit activity trajectory, and adoption signals (stars, forks, dependents if available from the README or badges). Is this production-ready, experimental, or somewhere in between?
+
+### Clarity
+
+How easy is it to understand and use? Assess documentation quality (README, guides, API docs), code readability (naming, structure, comments where needed), and onboarding experience (quickstart, examples, clear entry points).
 
 ## Main components
 
