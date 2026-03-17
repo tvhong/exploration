@@ -1,5 +1,6 @@
 ---
 description: Explore a repo in repos/ and write a structured analysis report to reports/. Triggers when the user wants to understand a repository they just added or asks "what is X about", "explore X", "analyze X", or "write a report on X". Use this skill whenever exploration of a submodule is requested, even informally.
+allowed-tools: Read, Glob, Grep, Write, Bash(just add*), Bash(just fetch*)
 ---
 
 # Repo Explorer
