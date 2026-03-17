@@ -6,7 +6,8 @@
       "Bash(just update*)",
       "Bash(just status*)",
       "Bash(just list*)",
-      "Bash(just clean*)"
+      "Bash(just clean*)",
+      "Skill(explore)"
     ],
     "deny": ["Edit(justfile)", "Write(justfile)"]
   }
